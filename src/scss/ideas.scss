@@ -1,0 +1,69 @@
+.container {
+    width       : calc(100% - 300px);
+    margin-left : auto;
+    margin-right: auto;
+    max-width   : 1000px;
+
+    .wrapper {
+        margin               : 0 auto;
+        display              : grid;
+        grid-gap             : 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .box {
+        border  : 1px solid black;
+        padding : 10px;
+        height  : 335px;
+        width   : 100%;
+        position: relative;
+        z-index : 1;
+
+        .ideaContent {
+            width      : 100%;
+            height     : 210px;
+            overflow   : hidden;
+            font-size  : 22px;
+            line-height: 30px;
+        }
+
+        .ideaSolutionText {
+            margin-top : 20px;
+            font-weight: bold;
+            font-size  : 22px;
+            line-height: 30px;
+            width      : 90%;
+            height     : 90%;
+            margin     : 10px 15px 10px 15px;
+        }
+
+        .text {
+            display    : inline-block;
+            width      : 100%;
+            font-size  : 28px;
+            line-height: 30px;
+            color      : rgb(88, 88, 88);
+
+            .data {
+                font-size  : 14px;
+                line-height: 20px;
+                margin     : 0 12px 20px 0;
+                font-weight: bold;
+                color      : black;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 80%;
+    }
+
+    .idea {
+        textarea {
+            width: 80%;
+        }
+    }
+}

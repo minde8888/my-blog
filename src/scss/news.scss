@@ -1,0 +1,108 @@
+.news {
+	margin     : 0 0 50px 0;
+}
+
+.postConteiner {
+	display : inline-block;
+	width   : 100%;
+	height  : 278px;
+	overflow: hidden;
+	margin  : 10px 0 0 0;
+
+	.postTitle {
+		width : 70%;
+		float : right;
+		margin: 0 0 10px 0;
+
+		a {
+			text-decoration: none;
+			color          : black;
+			float          : left;
+		}
+	}
+
+	.postImage {
+		width : 30%;
+		float : left;
+		margin: 0 0 0 0;
+
+		img {
+			height    : 270px;
+			width     : 270px;
+			object-fit: cover;
+		}
+	}
+
+	.postContent {
+		width: 70%;
+		float: right;
+	}
+}
+
+@media (max-width: 1300px) {
+	.postConteiner {
+		.postTitle {
+			width: 60%;
+		}
+
+		.postContent {
+			width: 60%;
+		}
+	}
+}
+
+@media (max-width: 950px) {
+	.postConteiner {
+		.postTitle {
+			width: 70%;
+		}
+
+		.postContent {
+			width: 70%;
+		}
+
+		.postImage {
+			width: 10%;
+
+			img {
+				height    : 270px;
+				width     : 150px;
+				object-fit: cover;
+			}
+		}
+	}
+}
+
+@media (max-width: 760px) {
+	.postConteiner {
+		height: 147px;
+
+		.postTitle {
+			margin    : 5px 0 5px 0;
+			width     : 100%;
+			text-align: none;
+			font-size : 16px;
+
+			a {
+				float: none;
+
+			}
+
+		}
+
+		.postContent {
+			width : 50%;
+			height: 100px;
+		}
+
+		.postImage {
+			width: 40%;
+
+			img {
+				height    : 130px;
+				width     : 110px;
+				object-fit: cover;
+			}
+		}
+	}
+}

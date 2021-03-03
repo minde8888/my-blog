@@ -1,0 +1,10 @@
+/node_modules
+///vendor
+/public/mix-manifest.json
+.DS_Store
+/vendor/
+node_modules
+debug.log
+uploades
+package.json
+package-lock.json
