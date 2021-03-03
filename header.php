@@ -5,9 +5,6 @@
 	<meta charset="<?php bloginfo('charset');?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<?php wp_head();?>
-	<?php
-                    do_action('print', 'frontMenu/headerfront.php');
-                    ?>
 </head>
 
 <body>
@@ -43,7 +40,7 @@
 					<div class="line"></div>
 					<div class="line"></div>
 				</div>
-				<div class="navMenu hiden">
+				<div class="navMenu">
 					<?php
 					do_action('print', 'frontMenu/headerfront.php');
 					?>
